@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1520930157 source:d:\programowanie\wzorzec(1)\main.c
+	"Z10.txt"
+
+1518177262 d:\programowanie\wzorzec(1)\z00.txt
+	<stdio.h>
+	<stdlib.h>
+
+1520928527 d:\programowanie\wzorzec(1)\z03.txt
+	<stdio.h>
+	<stdlib.h>
+
+1520929899 d:\programowanie\wzorzec(1)\z08.txt
+	<stdio.h>
+	<stdlib.h>
+
+1520930148 d:\programowanie\wzorzec(1)\z10.txt
+	<stdio.h>
+	<stdlib.h>
+

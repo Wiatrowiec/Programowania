@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void przypisanie(int n, int *w)
+{
+*w=n;
+}
+int main(){
+    int k=65;
+    int c=24;
+    int *a = &k;
+    printf("c:= %d", c);
+    printf(" a:= %d\n", *a);
+    przypisanie(c,a);
+    printf("Po zamianie a:= %d", *a);
+    }

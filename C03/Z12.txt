@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int  funkcja(int (*wsk)(int k), int (*wsk1)(int c),unsigned int a)
+{
+return wsk(a);
+}
+int main()
+{
+int n = 10;
+}

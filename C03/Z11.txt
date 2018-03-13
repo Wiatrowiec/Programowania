@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int  funkcja(double (*wsk)(int k),int a)
+{
+return wsk(a);
+}
+int main()
+{
+int n = 10;
+printf("Adres:= %p",funkcja(n)) ;
+}

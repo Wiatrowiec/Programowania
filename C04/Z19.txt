@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int tablica (int n,int tab[])
+{
+int i,y=0;
+int *tab1 = (int*)malloc(n*sizeof(int));
+
+for (i=0;i<n;i++)
+    {
+    if (tab[i]!=0)
+        {
+        tab1[y]=tab[i];
+        y++;
+        }
+    }
+free(tab1);
+return *tab1;
+}
+
+
+int main(){
+int tab[5]={1,2,0,2,3};
+printf("%p",tablica(5,tab));
+}

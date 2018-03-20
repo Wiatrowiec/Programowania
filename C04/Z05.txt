@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int suma(int *a, int*b)
+{
+return *a+*b;
+}
+int main(){
+    int k=65;
+    int c=24;
+    int *a = &k;
+    int *b = &c;
+    printf("Suma:= %d",suma(a,b));
+    }

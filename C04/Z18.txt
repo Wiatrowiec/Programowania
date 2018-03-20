@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int wektory (int n,int jeden[],int dwa[])
+{
+int i;
+int suma[n];
+for (i=0;i<n;i++)
+    {
+    suma[i]=jeden[i]+dwa[i];
+    }
+int *wsk = suma;
+return wsk;
+}
+
+
+int main(){
+int tab1[3]={2,3,4};
+int tab2[3]={3,4,2};
+printf("%p",wektory(3,tab1,tab2));
+}

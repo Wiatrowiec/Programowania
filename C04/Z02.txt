@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int porownanie(int *a, int *b)
+{
+if (*a > *b)
+return a;
+else
+return b;
+}
+
+
+int main(){
+    int k=30;
+    int c=24;
+    int *a = &k;
+    int *b = &c;
+    printf(" %p", porownanie(a,b));
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int funkcja(int n)
+{
+double tablica = (double*)malloc(n*sizeof(double));
+int *wsk=tablica;
+return wsk;
+}
+
+int main()
+{
+printf("%p",funkcja(3));
+}

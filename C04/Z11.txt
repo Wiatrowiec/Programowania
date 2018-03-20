@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int  iloczyn(int n,double wektor[],double wektor1[])
+{
+int i;
+int iloczyn=0;
+for (i=0;i<n;i++)
+    {
+    iloczyn+=(wektor[i]*wektor1[i]);
+    }
+}
+int main()
+{
+
+}

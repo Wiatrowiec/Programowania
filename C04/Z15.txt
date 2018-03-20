@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void freedom(int *tablica)
+{
+free(tablica);
+}
+
+
+int main(){
+int tab1[3]={2,3,4};
+}

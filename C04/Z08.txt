@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+double * funkcja()
+{
+return malloc(sizeof(double));
+}
+int main()
+{
+
+printf("Adres:= %p",funkcja()) ;
+}

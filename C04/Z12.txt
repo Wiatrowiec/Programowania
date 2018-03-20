@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+void czytaj(int n,int tab[])
+{
+int i=0;
+for (i;i<n;i++)
+    {
+    printf("%d \n",tab[i]);
+    }
+}
+void  funkcja(int n, int tab[])
+{
+int i,pomoc[n];
+int s=n;
+czytaj(n,tab);
+for (i=0;i<n;i++)
+    {
+    pomoc[i]=tab[s-1];
+    s--;
+    }
+for (i=0;i<n;i++){
+    tab[i]=pomoc[i];
+    }
+czytaj(n,tab);
+}
+
+void funkcja1(int n,int tab[]){
+int i,y,pomoc;
+for (i=0;i<n;i++){
+    for (y=i+1;y<n;y++){
+        if (tab[i]>tab[y])
+            {
+            pomoc=tab[y];
+            tab[y]=tab[i];
+            tab[i]=pomoc;
+            }
+        }
+    }
+czytaj(n,tab);
+}
+
+int main()
+{
+int tab[4]={2,1,6,5};
+funkcja1(4,tab);
+return 0;
+}

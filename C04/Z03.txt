@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void zamiana(int *a, int *b)
+{
+int pomoc = *b ; //Pomocnicza ma wartosc adresu wskazywanego przez b
+*b=*a; //wskaznik b  zmiania wskazujacego adresu  na wartosc z adressu wskazywanego przez wskaznik a
+*a=pomoc; // wkaznik a przypiuje wskazuj¹cymeu adressowi wartosc pomoc
+}
+
+
+int main(){
+    int k=30;
+    int c=24;
+    int *a = &k;
+    int *b = &c;
+    printf("a:= %d", *a);
+    printf(" b:= %d", *b);
+    zamiana(a,b);
+    printf("\na:= %d", *a);
+    printf(" b:= %d", *b);
+
+    return 0;
+}
